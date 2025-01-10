@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Application Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #d3d3d3, #f5f5f5);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: backgroundFlow 15s linear infinite; /* Dynamic flowing background */
+        }
+
+        /* Define the flowing background animation */
+        @keyframes backgroundFlow {
+            0% {
+                background: linear-gradient(135deg, #d3d3d3, #f5f5f5);
+            }
+            50% {
+                background: linear-gradient(225deg, #d3d3d3, #f5f5f5);
+            }
+            100% {
+                background: linear-gradient(135deg, #d3d3d3, #f5f5f5);
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Ensures the container is not too wide */
+            box-sizing: border-box; /* Keeps the padding from expanding the width */
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            color: #222222;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #222222, #666666);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            color: #444444;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+            color: #333333;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 16px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fafafa;
+            color: #222222;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #888888;
+            box-shadow: 0 0 10px rgba(136, 136, 136, 0.4);
+            outline: none;
+        }
+        button {
+            background-color: #666666;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #888888;
+            transform: scale(1.05);
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        textarea {
+            resize: none;
+        }
+        p {
+            text-align: center;
+            color: #555555;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Application Portal</h1>
+        <form action="#" method="post">
+            <!-- Candidate Snapshot -->
+            <h2>Candidate Snapshot</h2>
+            <label for="name">Your Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g., Sam Wilson" required>
+
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g., samwilson@example.com" required>
+
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 85673 27477" required>
+
+            <label for="linkedin">LinkedIn or Portfolio Link</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="e.g., https://linkedin.com/in/username">
+
+            
+            <h2>Career Aspirations</h2>
+            <label for="position">Role You're Applying For</label>
+            <input type="text" id="position" name="position" placeholder="e.g., Software Engineer" required>
+
+            <label for="availability">Joining Availability</label>
+            <select id="availability" name="availability" required>
+                <option value="">Select Availability</option>
+                <option value="immediate">Available Immediately</option>
+                <option value="2_weeks">In 2 Weeks</option>
+                <option value="1_month">In 1 Month</option>
+            </select>
+
+            <label for="location">Preferred Work Mode</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Remote, On-site, Hybrid">
+
+
+            <h2>Skillset & Goals</h2>
+            <label for="skills">Highlight Your Key Skills</label>
+            <textarea id="skills" name="skills" rows="4" placeholder="List your technical and soft skills"></textarea>
+
+            <label for="vision">Your Long-term Vision</label>
+            <textarea id="vision" name="vision" rows="4" placeholder="Share your career aspirations"></textarea>
+
+
+            <button type="submit">Submit Application</button>
+        </form>
+        <p>Thank you for applying to our Careers!</p>
+    </div>
+</body>
+</html>

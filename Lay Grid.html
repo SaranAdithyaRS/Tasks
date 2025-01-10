@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantastic Grid Layout</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "sidebar main aside"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 15px;
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      grid-area: header;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    nav {
+      grid-area: sidebar;
+      background: #333;
+      color: white;
+      padding: 20px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    nav:hover {
+      transform: translateX(-10px);
+    }
+
+    main {
+      grid-area: main;
+      background: #fff;
+      padding: 20px;
+      border: 2px solid #ccc;
+      font-size: 1.2rem;
+      border-radius: 10px;
+    }
+
+    aside {
+      grid-area: aside;
+      background: #f0f0f0;
+      padding: 20px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+    }
+
+    footer {
+      grid-area: footer;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header class="header">Marvel</header>
+    <nav class="sidebar">Avengers</nav>
+    <main class="main">Marvel's Avengers and X-Men have had several memorable collaborations over the years, often resulting in epic crossovers that captivate fans. One of the most notable events is "Avengers vs. X-Men" (AvX), which took place in 2012. This storyline revolved around the return of the Phoenix Force, a cosmic entity of immense power. The Avengers and X-Men clashed over whether to use or destroy the Phoenix Force, leading to a massive battle that tested the limits of both teams2.
+
+        Despite their differences, the Avengers and X-Men have also teamed up to face common threats, showcasing their combined strength and heroism. These collaborations highlight the rich history and dynamic relationships between Marvel's premier superhero teams.</main>
+    <aside class="aside">X - Men</aside>
+    <footer class="footer">&copy; 2025 Marvel News. All Rights Reserved.</footer>
+  </div>
+</body>
+</html>
