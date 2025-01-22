@@ -1,0 +1,146 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f4f8fb;
+  
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #4caf50; /* Green border color */
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.task-input:focus {
+  box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.5);
+}
+
+.add-button {
+  width: 100px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-icon {
+  font-size: 1.5em;
+  color: #646cff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+  box-shadow: 0px 0px 10px rgba(100, 108, 255, 0.5);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+}
+
+.todo-item.completed {
+  background-color: #d4edda;
+  color: #155724;
+  text-decoration: line-through;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  color: black;
+}
+
+.delete-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
